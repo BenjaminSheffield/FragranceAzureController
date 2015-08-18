@@ -14,7 +14,7 @@ namespace FragranceController.Controllers
 {
     public class FragrancesController : ApiController
     {
-        private FragranceDbAccess db = new FragranceDbAccess();
+        private FragranceReact db = new FragranceReact();
 
         // GET: api/Fragrances
         public IQueryable<Fragrance> GetFragrances()

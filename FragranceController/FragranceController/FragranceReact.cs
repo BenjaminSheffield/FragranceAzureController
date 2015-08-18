@@ -5,10 +5,10 @@ namespace FragranceController
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class FragranceDbAccess : DbContext
+    public partial class FragranceReact : DbContext
     {
-        public FragranceDbAccess()
-            : base("name=FragranceDbAccess")
+        public FragranceReact()
+            : base("name=FragranceReact")
         {
         }
 
