@@ -8,7 +8,7 @@ namespace FragranceController
     public partial class FragranceReact : DbContext
     {
         public FragranceReact()
-            : base("name=FragranceDisableReact")
+            : base("name=FragranceReact")
         {
         }
 
