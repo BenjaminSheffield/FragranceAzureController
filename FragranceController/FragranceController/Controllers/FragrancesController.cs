@@ -17,9 +17,9 @@ namespace FragranceController.Controllers
         private FragranceReact db = new FragranceReact();
 
         // GET: api/Fragrances
-        public List<Fragrance> GetFragrances(string house = "")
+        public List<Fragrance> GetFragrances(string house = "", string rating = "", string gender = "", string price = "")
         {
-            var relevantSearch = db.Fragrances.Where(x => x.House.Contains(house));
+            var relevantSearch = db.Fragrances.Where(x => x.House.Contains(house)).Where(x => x.Rating.Contains(rating)).Where(x => x.Gender.Contains(gender)).Where(x => x.Price.Contains(price));
             List<Fragrance> fragranceList = new List<Fragrance>();
             
                 foreach (var fragrance in relevantSearch)
