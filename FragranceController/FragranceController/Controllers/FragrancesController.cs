@@ -17,9 +17,9 @@ namespace FragranceController.Controllers
         private FragranceReact db = new FragranceReact();
 
         // GET: api/Fragrances
-        public IQueryable<Fragrance> GetFragrances()
+        public IQueryable<Fragrance> GetFragrances(string House)
         {
-            return db.Fragrances;
+            return db.Fragrances.Where(x => x.House == House);
         }
 
         // GET: api/Fragrances/5
